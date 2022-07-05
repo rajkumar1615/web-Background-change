@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+p{
+    margin: 50px 100px;
+    text-align: justify;
+    font-size: 18px;
+}
+#color-switcher{
+    text-align: right;
+    margin-right: 100px;
+}
+
+.btn{
+    width: 20px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+#white{
+    background-color: #ffffff;
+}
+
+#aqua{
+    background-color: #7fffd4;
+}
+#violet{
+    background-color: #ce9aff;
+}
+#black{
+    background-color: #000000;
+}
+
+
+
+
+
+
+

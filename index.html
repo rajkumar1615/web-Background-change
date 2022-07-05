@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="text">Radhe Radhe</h1>
+
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam, quae, ea animi veniam quasi
+        adipisci quas inventore repellat earum architecto totam qui quaerat aspernatur. Animi harum facere fuga,
+        doloribus a saepe, delectus mollitia quas, veniam neque minus commodi. Rerum pariatur quis eaque ullam,
+        consectetur atque sed, in quisquam fugit repudiandae accusamus numquam ipsam earum nemo corrupti odit fugiat?
+        Atque doloremque officiis blanditiis quas accusamus aliquid veniam a eius quis adipisci? Explicabo repellat
+        eveniet dolore omnis et vel eius corrupti nemo sequi, vitae culpa amet aut odio! Fugit aliquam facilis nulla, et
+        itaque inventore minus recusandae dolore deserunt sapiente cumque illum eos, corrupti rem tempora aspernatur
+        voluptatem excepturi laborum in? Id harum nostrum facilis facere libero odio laudantium suscipit eaque vel rerum
+        asperiores, nisi quas porro? Consectetur laudantium, quaerat rem quas ipsum at veritatis cupiditate eligendi
+        repellat iste cumque! Fuga aspernatur magnam impedit modi maiores quae, sequi quasi magni pariatur delectus in,
+        facere earum ratione alias vero voluptatibus sunt sed, enim quam nemo. Impedit libero sunt iure mollitia
+        corrupti, quo vero culpa laudantium, distinctio nobis veniam enim saepe! Eligendi vel perferendis alias odio,
+        dolor odit tempore obcaecati nihil, minima consequatur cumque dolore nostrum ea assumenda deleniti architecto
+        voluptates maxime hic est? Mollitia, rerum voluptatibus? Minus atque doloribus reprehenderit minima, ipsum nihil
+        voluptatibus rerum voluptatem unde distinctio consectetur saepe voluptates est provident libero illum dolores
+        voluptate quibusdam dolore ipsam. Reprehenderit blanditiis quae, adipisci veniam eaque labore dolores neque
+        molestias aliquam sint in libero nemo id accusantium, doloremque quam non. Ea quidem nam tenetur, deleniti sequi
+        accusantium, doloremque accusamus, recusandae quas ex eos aspernatur? Nihil doloremque labore quisquam,
+        asperiores similique cum deleniti molestias harum ratione aspernatur fuga laudantium laboriosam cumque facilis a
+        provident nostrum aperiam corporis sapiente maiores quam veniam. Qui distinctio ratione dolorum iure atque eius,
+        debitis alias soluta delectus vel.
+    </p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam, quae, ea animi veniam quasi
+        adipisci quas inventore repellat earum architecto totam qui quaerat aspernatur. Animi harum facere fuga,
+        doloribus a saepe, delectus mollitia quas, veniam neque minus commodi. Rerum pariatur quis eaque ullam,
+        consectetur atque sed, in quisquam fugit repudiandae accusamus numquam ipsam earum nemo corrupti odit fugiat?
+        Atque doloremque officiis blanditiis quas accusamus aliquid veniam a eius quis adipisci? Explicabo repellat
+        eveniet dolore omnis et vel eius corrupti nemo sequi, vitae culpa amet aut odio! Fugit aliquam facilis nulla, et
+        itaque inventore minus recusandae dolore deserunt sapiente cumque illum eos, corrupti rem tempora aspernatur
+        voluptatem excepturi laborum in? Id harum nostrum facilis facere libero odio laudantium suscipit eaque vel rerum
+        asperiores, nisi quas porro? Consectetur laudantium, quaerat rem quas ipsum at veritatis cupiditate eligendi
+        repellat iste cumque! Fuga aspernatur magnam impedit modi maiores quae, sequi quasi magni pariatur delectus in,
+        facere earum ratione alias vero voluptatibus sunt sed, enim quam nemo. Impedit libero sunt iure mollitia
+        corrupti, quo vero culpa laudantium, distinctio nobis veniam enim saepe! Eligendi vel perferendis alias odio,
+        dolor odit tempore obcaecati nihil, minima consequatur cumque dolore nostrum ea assumenda deleniti architecto
+        voluptates maxime hic est? Mollitia, rerum voluptatibus? Minus atque doloribus reprehenderit minima, ipsum nihil
+        voluptatibus rerum voluptatem unde distinctio consectetur saepe voluptates est provident libero illum dolores
+        voluptate quibusdam dolore ipsam. Reprehenderit blanditiis quae, adipisci veniam eaque labore dolores neque
+        molestias aliquam sint in libero nemo id accusantium, doloremque quam non. Ea quidem nam tenetur, deleniti sequi
+        accusantium, doloremque accusamus, recusandae quas ex eos aspernatur? Nihil doloremque labore quisquam,
+        asperiores similique cum deleniti molestias harum ratione aspernatur fuga laudantium laboriosam cumque facilis a
+        provident nostrum aperiam corporis sapiente maiores quam veniam. Qui distinctio ratione dolorum iure atque eius,
+        debitis alias soluta delectus vel.
+    </p>
+
+
+    <script>
+        function changeBG(color) {
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text")
+            if (color == "#000000") {
+                for (let elm of txt) {
+                    elm.style.color = "white";
+                }
+            } else {
+                for (let elm of txt) {
+                    elm.style.color = "black"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
